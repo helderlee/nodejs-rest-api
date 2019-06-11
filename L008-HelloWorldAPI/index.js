@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 // The routes order does matter
 app.use('/profile', (req, res, next) => {
-  res.send('<h1>Hello from Profile</h1>')
+  res.send('<h1>Hello Profile</h1>')
 })
 
 // This route handles all other requests
