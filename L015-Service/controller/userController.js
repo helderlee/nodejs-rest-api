@@ -2,8 +2,8 @@ const constants = require('../resource/constants')
 const userService = require('../service/userService')
 
 module.exports.createUser = async (req, res, next) => {
+    let responseObj = {}
     try {
-        let responseObj = {}
         let data = req.body
         console.log('req.body', req.body)
 
